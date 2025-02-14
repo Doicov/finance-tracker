@@ -27,7 +27,9 @@ export default function RootLayout({
 }>) {
 
   return (
-    <ClerkProvider>
+    <ClerkProvider signInFallbackRedirectUrl="./"
+                    // signOutFallbackRedirectUrl="/sign-in"
+                    >
       
         <html lang="en" className="dark" style={{colorScheme: "dark",}}>
       
